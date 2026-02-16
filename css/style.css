@@ -21,6 +21,9 @@
   li {
     @apply flex items-center gap-2.5 md:border-none;
   }
+  input {
+    @apply focus:outline-0;
+  }
 }
 
 @layer components {

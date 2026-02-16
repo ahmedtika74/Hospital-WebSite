@@ -2,6 +2,7 @@
 const logo = document.querySelector(".logo");
 const headerMenu = document.querySelector("header .menu");
 const navLinks = document.querySelector("nav ul");
+const navLinkItems = document.querySelectorAll("nav ul li");
 const bookNowBtn = document.querySelector(".book-now");
 const bookAnAppointmentBtn = document.querySelector(".cta-book");
 const discoverMoreBtn = document.querySelector(".cta-discover");
@@ -187,6 +188,10 @@ filterInput(messageInput, /[^a-zA-Z0-9\s.,!?]/g);
 logo.addEventListener("click", () => (window.location.href = "index.html"));
 
 headerMenu.addEventListener("click", openMenu);
+
+navLinkItems.forEach((e) => {
+  e.addEventListener("click", openMenu);
+});
 
 bookNowBtn.addEventListener("click", () => {
   window.location.href = "#contact-us";
