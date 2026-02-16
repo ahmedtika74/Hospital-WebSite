@@ -636,6 +636,10 @@
   }
 }
 @layer base {
+  i {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
   a {
     display: block;
     padding-inline: calc(var(--spacing) * 3.75);

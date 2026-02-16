@@ -9,20 +9,23 @@
 }
 
 @layer base {
+  i {
+    @apply font-black;
+  }
   a {
-    @apply px-3.75 py-3.75 block hover:bg-medical-primary hover:text-white duration-300;
+    @apply hover:bg-medical-primary block px-3.75 py-3.75 duration-300 hover:text-white;
   }
   button {
     @apply cursor-pointer;
   }
   li {
-    @apply md:border-none flex items-center gap-2.5;
+    @apply flex items-center gap-2.5 md:border-none;
   }
 }
 
 @layer components {
   .logo {
-    @apply cursor-pointer flex items-center gap-2.5 text-sm md:text-2xl font-black text-medical-primary;
+    @apply text-medical-primary flex cursor-pointer items-center gap-2.5 text-sm font-black md:text-2xl;
   }
   .logo h1 {
     @apply text-medical-dark;
@@ -31,31 +34,31 @@
     @apply text-medical-primary;
   }
   .cta-btn {
-    @apply bg-medical-primary rounded-md text-sm md:text-base py-1.25 px-2.5 text-white hover:bg-medical-dark duration-300;
+    @apply bg-medical-primary hover:bg-medical-dark rounded-md px-2.5 py-1.25 text-sm text-white duration-300 md:text-base;
   }
   .container {
-    @apply md:w-[90%] mx-auto px-2.5;
+    @apply mx-auto px-2.5 md:w-[90%];
   }
   .card {
-    @apply relative gap-7.5 bg-white p-5 rounded-2xl md:hover:-translate-y-2.5 duration-300 shadow-[0_1px_2px_#999] flex;
+    @apply relative flex gap-7.5 rounded-2xl bg-white p-5 shadow-[0_1px_2px_#999] duration-300 md:hover:-translate-y-2.5;
   }
   .card i {
-    @apply text-[#0ea4e979] text-4xl absolute top-2.5 right-2.5 duration-300;
+    @apply absolute top-2.5 right-2.5 text-4xl text-[#0ea4e979] duration-300;
   }
   .card .text .card-heading {
-    @apply text-medical-accent font-black text-2xl mb-2.5;
+    @apply text-medical-accent mb-2.5 text-2xl font-black;
   }
   .card .text .card-para {
-    @apply leading-normal text-medical-dark;
+    @apply text-medical-dark leading-normal;
   }
   .sec-heading {
     @apply text-center;
   }
   .sec-heading h2 {
-    @apply text-4xl font-black text-white mb-5 text-shadow-lg;
+    @apply mb-5 text-4xl font-black text-white text-shadow-lg;
   }
   .sec-heading p {
-    @apply text-medical-bg text-[18px] text-shadow-2xs text-justify md:text-center;
+    @apply text-medical-bg text-justify text-[18px] text-shadow-2xs md:text-center;
   }
   .info-item {
     @apply flex items-center gap-3;
