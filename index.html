@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A responsive hospital website built with Tailwind CSS, featuring sections for departments, team, about us, and contact information."
+      content="A responsive hospital website built with Vanilla JS, Tailwind CSS, featuring sections for departments, team, about us, and contact information."
     />
     <title>MY Hospital</title>
-    <link href="./css/output.css" rel="stylesheet" />
-    <link 
-      rel="stylesheet" 
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
-      crossorigin="anonymous" 
-      referrerpolicy="no-referrer" 
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
     <!-- Header -->
-    <header class="bg-white sticky top-0 shadow-lg z-50 py-2.5 h-[10vh]">
-      <div class="container flex justify-between items-center h-full">
+    <header class="sticky top-0 z-50 h-[10vh] bg-white py-2.5 shadow-lg">
+      <div class="container flex h-full items-center justify-between">
         <div class="logo">
           <i class="fa-solid fa-hospital"></i>
           <h1>MY<span> Hospital</span></h1>
         </div>
         <nav>
           <ul
-            class="absolute top-full h-0 bg-white w-full md:h-full left-0 overflow-hidden duration-300 md:relative md:flex md:items-center md:justify-center"
+            class="absolute top-full left-0 h-0 w-full overflow-hidden bg-white duration-300 md:relative md:flex md:h-full md:items-center md:justify-center"
           >
             <li><a href="#">Home</a></li>
             <li><a href="#departments">Departments</a></li>
@@ -37,7 +37,7 @@
           </ul>
         </nav>
         <button class="book-now cta-btn">Book Now</button>
-        <button class="menu md:hidden text-medical-primary">
+        <button class="menu text-medical-primary md:hidden">
           <i class="fa-solid fa-bars text-2xl"></i>
         </button>
       </div>
@@ -45,32 +45,32 @@
 
     <!-- Hero -->
     <div class="hero h-[90vh] overflow-hidden">
-      <div class="container grid md:grid-cols-2 items-center h-full md:gap-10">
+      <div class="container grid h-full items-center md:grid-cols-2 md:gap-10">
         <div class="content">
           <h2
-            class="text-[30px] text-center md:text-left mt-10 md:text-[55px] font-black text-medical-accent md:leading-normal md:mb-5"
+            class="text-medical-accent mt-10 text-center text-[30px] font-black md:mb-5 md:text-left md:text-[55px] md:leading-normal"
           >
             Advanced Medical Care You Can Trust
           </h2>
           <p
-            class="my-5 md:text-xl text-justify md:text-left text-medical-dark md:mb-5"
+            class="text-medical-dark my-5 text-justify md:mb-5 md:text-left md:text-xl"
           >
             Providing professional medical services with a team of expert
             doctors and the latest technology for your family’s well-being.
           </p>
           <div
-            class="cta-buttons flex justify-center md:justify-start items-center gap-5"
+            class="cta-buttons flex items-center justify-center gap-5 md:justify-start"
           >
             <button class="cta-book cta-btn">Book an Appointment</button>
             <button
-              class="cta-discover cta-btn bg-transparent border text-medical-primary hover:text-white hover:bg-medical-primary"
+              class="cta-discover cta-btn text-medical-primary hover:bg-medical-primary border bg-transparent hover:text-white"
             >
               Discover More
             </button>
           </div>
         </div>
         <div
-          class="image md:animate-[up-down_2.5s_infinite_linear] md:flex h-full justify-center items-end"
+          class="image h-full items-end justify-center md:flex md:animate-[up-down_2.5s_infinite_linear]"
         >
           <img
             class="w-90 md:w-137.5"
@@ -82,30 +82,30 @@
     </div>
 
     <!-- Departments -->
-    <div class="md:h-[90vh] bg-blue-400 py-16" id="departments">
+    <div class="bg-blue-400 py-16 md:h-[90vh]" id="departments">
       <div class="container">
         <div class="sec-heading">
           <h2>Departments</h2>
           <p>We provide professional care for you and your family</p>
         </div>
         <div
-          class="content mt-15 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10"
+          class="content mt-15 grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-10"
         ></div>
       </div>
     </div>
 
     <!-- Our Team -->
-    <div class="our-team md:h-[90vh] py-16" id="our-team">
+    <div class="our-team py-16 md:h-[90vh]" id="our-team">
       <div class="container">
         <div class="sec-heading mb-5 md:mb-20">
           <h2 class="text-blue-400">Our Team</h2>
-          <p class="text-blue-500 text-base">
+          <p class="text-base text-blue-500">
             Our team of world-class specialists is dedicated to providing the
             best medical care.
           </p>
         </div>
         <div
-          class="team-container grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-15"
+          class="team-container grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-15"
         ></div>
       </div>
     </div>
@@ -115,15 +115,15 @@
       <div class="container">
         <div class="sec-heading mb-5 md:mb-20">
           <h2>About Our Hospital</h2>
-          <p class="text-[18px] md:w-3/4 mx-auto">
+          <p class="mx-auto text-[18px] md:w-3/4">
             With over 20 years of experience, our hospital has been a pioneer in
             providing high-quality healthcare and advanced medical treatments
           </p>
         </div>
-        <div class="content grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+        <div class="content grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-10">
           <div class="feature-list">
             <ul
-              class="bg-white flex flex-col gap-3 p-5 text-medical-accent font-bold h-43"
+              class="text-medical-accent flex h-43 flex-col gap-3 bg-white p-5 font-bold"
             >
               <li>
                 <i
@@ -153,7 +153,7 @@
           </div>
           <div class="stats flex flex-col">
             <ul
-              class="bg-white flex flex-col justify-center gap-5 p-5 text-medical-accent font-bold h-43"
+              class="text-medical-accent flex h-43 flex-col justify-center gap-5 bg-white p-5 font-bold"
             >
               <li>
                 <i
@@ -184,13 +184,13 @@
       <div class="container">
         <div class="sec-heading mb-5 md:mb-20">
           <h2 class="text-blue-400">Contact Us</h2>
-          <p class="text-blue-500 text-base">
+          <p class="text-base text-blue-500">
             Our team is here to help you. Reach out to us for any medical
             inquiries or to schedule a visit.
           </p>
         </div>
         <div
-          class="content grid grid-cols-1 md:grid-cols-2 items-center gap-5 md:gap-10"
+          class="content grid grid-cols-1 items-center gap-5 md:grid-cols-2 md:gap-10"
         >
           <div class="contact-info flex flex-col gap-5 p-5">
             <div class="info-item">
@@ -210,24 +210,24 @@
             <form
               action="#"
               method="POST"
-              class="p-5 flex flex-col gap-5 rounded-md"
+              class="flex flex-col gap-5 rounded-md p-5"
             >
               <input
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                class="border p-2 rounded-md focus:outline-none"
+                class="rounded-md border p-2 focus:outline-none"
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Your Email"
-                class="border p-2 rounded-md focus:outline-none"
+                class="rounded-md border p-2 focus:outline-none"
               />
               <select
                 name="department"
                 id="department"
-                class="border p-2 rounded-md focus:outline-none"
+                class="rounded-md border p-2 focus:outline-none"
               >
                 <option value="cardiology">Cardiology</option>
                 <option value="dental">Dental Care</option>
@@ -241,13 +241,13 @@
                 name="phone"
                 id="phone"
                 placeholder="Your Phone Number"
-                class="border p-2 rounded-md focus:outline-none"
+                class="rounded-md border p-2 focus:outline-none"
               />
               <textarea
                 name="message"
                 rows="4"
                 placeholder="Your Message"
-                class="border p-2 rounded-md focus:outline-none resize-none"
+                class="resize-none rounded-md border p-2 focus:outline-none"
               ></textarea>
               <button type="submit" class="cta-btn self-end">Book Now</button>
             </form>
@@ -259,7 +259,7 @@
     <!-- Footer -->
     <footer class="bg-black py-5">
       <div
-        class="container grid grid-cols-1 md:grid-cols-4 items-start gap-5 md:gap-10 text-sm text-gray-500"
+        class="container grid grid-cols-1 items-start gap-5 text-sm text-gray-500 md:grid-cols-4 md:gap-10"
       >
         <div class="logo mx-auto md:mx-0">
           <i class="fa-solid fa-hospital"></i>
@@ -269,11 +269,11 @@
           class="quick-link border-t border-gray-700 pt-5 md:border-t-0 md:pt-0"
         >
           <h3
-            class="font-bold text-medical-primary mb-2 text-center md:text-left"
+            class="text-medical-primary mb-2 text-center font-bold md:text-left"
           >
             Quick Links
           </h3>
-          <ul class="flex justify-between md:flex-col gap-1">
+          <ul class="flex justify-between gap-1 md:flex-col">
             <li><a class="p-0" href="#departments">Departments</a></li>
             <li><a class="p-0" href="#our-team">Our Team</a></li>
             <li><a class="p-0" href="#about-us">About Us</a></li>
@@ -282,7 +282,7 @@
         </div>
         <div class="contact-info">
           <h3
-            class="font-bold text-medical-primary mb-2 text-center md:text-left"
+            class="text-medical-primary mb-2 text-center font-bold md:text-left"
           >
             Contact Info
           </h3>
@@ -302,10 +302,10 @@
           </ul>
         </div>
       </div>
-      <div class="copyright border-t border-gray-700 mt-5 pt-5">
-        <p class="text-center text-gray-500 text-sm">
+      <div class="copyright mt-5 border-t border-gray-700 pt-5">
+        <p class="text-center text-sm text-gray-500">
           &copy; Developed by
-          <span class="text-white cursor-pointer">Ahmed Fouad</span>. All rights
+          <span class="cursor-pointer text-white">Ahmed Fouad</span>. All rights
           reserved.
         </p>
       </div>
@@ -314,7 +314,7 @@
     <!-- Go Top -->
     <button
       id="go-top"
-      class="fixed bottom-5 right-5 text-2xl w-12.5 h-12.5 rounded-full text-white bg-medical-primary duration-300 opacity-0"
+      class="bg-medical-primary fixed right-5 bottom-5 h-12.5 w-12.5 rounded-full text-2xl text-white opacity-0 duration-300"
     >
       <i class="fa-solid fa-arrow-up"></i>
     </button>
