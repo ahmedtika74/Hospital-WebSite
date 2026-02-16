@@ -1,0 +1,333 @@
+<!doctype html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A responsive hospital website built with Tailwind CSS, featuring sections for departments, team, about us, and contact information."
+    />
+    <link href="./css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-white sticky top-0 shadow-lg z-50 py-2.5 h-[10vh]">
+      <div class="container flex justify-between items-center h-full">
+        <div class="logo">
+          <i class="fa-solid fa-hospital"></i>
+          <h1>MY<span> Hospital</span></h1>
+        </div>
+        <nav>
+          <ul
+            class="absolute top-full h-0 bg-white w-full md:h-full left-0 overflow-hidden duration-300 md:relative md:flex md:items-center md:justify-center"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#our-team">Our Team</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button class="book-now cta-btn">Book Now</button>
+        <button class="menu md:hidden text-medical-primary">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero h-[90vh] overflow-hidden">
+      <div class="container grid md:grid-cols-2 items-center h-full md:gap-10">
+        <div class="content">
+          <h2
+            class="text-[30px] text-center md:text-left mt-10 md:text-[55px] font-black text-medical-accent md:leading-normal md:mb-5"
+          >
+            Advanced Medical Care You Can Trust
+          </h2>
+          <p
+            class="my-5 md:text-xl text-justify md:text-left text-medical-dark md:mb-5"
+          >
+            Providing professional medical services with a team of expert
+            doctors and the latest technology for your family’s well-being.
+          </p>
+          <div
+            class="cta-buttons flex justify-center md:justify-start items-center gap-5"
+          >
+            <button class="cta-book cta-btn">Book an Appointment</button>
+            <button
+              class="cta-discover cta-btn bg-transparent border text-medical-primary hover:text-white hover:bg-medical-primary"
+            >
+              Discover More
+            </button>
+          </div>
+        </div>
+        <div
+          class="image md:animate-[up-down_2.5s_infinite_linear] md:flex h-full justify-center items-end"
+        >
+          <img
+            class="w-90 md:w-137.5"
+            src="assets/img/doctor.png"
+            alt="Hero Doctor Image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Departments -->
+    <div class="md:h-[90vh] bg-blue-400 py-16" id="departments">
+      <div class="container">
+        <div class="sec-heading">
+          <h2>Departments</h2>
+          <p>We provide professional care for you and your family</p>
+        </div>
+        <div
+          class="content mt-15 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Our Team -->
+    <div class="our-team md:h-[90vh] py-16" id="our-team">
+      <div class="container">
+        <div class="sec-heading mb-5 md:mb-20">
+          <h2 class="text-blue-400">Our Team</h2>
+          <p class="text-blue-500 text-base">
+            Our team of world-class specialists is dedicated to providing the
+            best medical care.
+          </p>
+        </div>
+        <div
+          class="team-container grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-15"
+        ></div>
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <div class="about-us bg-blue-400 py-16" id="about-us">
+      <div class="container">
+        <div class="sec-heading mb-5 md:mb-20">
+          <h2>About Our Hospital</h2>
+          <p class="text-[18px] md:w-3/4 mx-auto">
+            With over 20 years of experience, our hospital has been a pioneer in
+            providing high-quality healthcare and advanced medical treatments
+          </p>
+        </div>
+        <div class="content grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+          <div class="feature-list">
+            <ul
+              class="bg-white flex flex-col gap-3 p-5 text-medical-accent font-bold h-43"
+            >
+              <li>
+                <i
+                  class="fa-solid fa-circle-check text-medical-safe text-2xl"
+                ></i
+                >Emergency Care 24/7
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-circle-check text-medical-safe text-2xl"
+                ></i
+                >Expert Professional Doctors
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-circle-check text-medical-safe text-2xl"
+                ></i
+                >Modern Medical Equipment
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-circle-check text-medical-safe text-2xl"
+                ></i
+                >Affordable Healthcare Packages
+              </li>
+            </ul>
+          </div>
+          <div class="stats flex flex-col">
+            <ul
+              class="bg-white flex flex-col justify-center gap-5 p-5 text-medical-accent font-bold h-43"
+            >
+              <li>
+                <i
+                  class="fa-solid fa-calendar-check text-medical-safe text-2xl"
+                ></i
+                >+20 Years of Experience
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-user-doctor text-medical-safe text-2xl"
+                ></i
+                >+150 Specialist Doctors
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-hospital-user text-medical-safe text-2xl"
+                ></i
+                >+20K Happy Patients
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="contact-us py-16" id="contact-us">
+      <div class="container">
+        <div class="sec-heading mb-5 md:mb-20">
+          <h2 class="text-blue-400">Contact Us</h2>
+          <p class="text-blue-500 text-base">
+            Our team is here to help you. Reach out to us for any medical
+            inquiries or to schedule a visit.
+          </p>
+        </div>
+        <div
+          class="content grid grid-cols-1 md:grid-cols-2 items-center gap-5 md:gap-10"
+        >
+          <div class="contact-info flex flex-col gap-5 p-5">
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>123 Main Street, Cityville, Country</p>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <p>+1 (555) 123-4567</p>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <p>contact@hospital.com</p>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form
+              action="#"
+              method="POST"
+              class="p-5 flex flex-col gap-5 rounded-md"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                class="border p-2 rounded-md focus:outline-none"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                class="border p-2 rounded-md focus:outline-none"
+              />
+              <select
+                name="department"
+                id="department"
+                class="border p-2 rounded-md focus:outline-none"
+              >
+                <option value="cardiology">Cardiology</option>
+                <option value="dental">Dental Care</option>
+                <option value="neurology">Neurology</option>
+                <option value="pediatrics">Pediatrics</option>
+                <option value="ophthalmology">Ophthalmology</option>
+                <option value="orthopedics">Orthopedics</option>
+              </select>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Your Phone Number"
+                class="border p-2 rounded-md focus:outline-none"
+              />
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Your Message"
+                class="border p-2 rounded-md focus:outline-none resize-none"
+              ></textarea>
+              <button type="submit" class="cta-btn self-end">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-black py-5">
+      <div
+        class="container grid grid-cols-1 md:grid-cols-4 items-start gap-5 md:gap-10 text-sm text-gray-500"
+      >
+        <div class="logo">
+          <i class="fa-solid fa-hospital"></i>
+          <h1>MY<span> Hospital</span></h1>
+        </div>
+        <div class="quick-link">
+          <h3
+            class="font-bold text-medical-primary mb-2 text-center md:text-left"
+          >
+            Quick Links
+          </h3>
+          <ul class="grid grid-cols-4 md:grid-cols-1 gap-2.5">
+            <li><a class="p-0" href="#departments">Departments</a></li>
+            <li><a class="p-0" href="#our-team">Our Team</a></li>
+            <li><a class="p-0" href="#about-us">About Us</a></li>
+            <li><a class="p-0" href="#contact-us">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="our-services">
+          <h3
+            class="font-bold text-medical-primary mb-2 text-center md:text-left"
+          >
+            Our Services
+          </h3>
+          <ul class="grid grid-cols-3 md:grid-cols-1 gap-2.5">
+            <li>Cardiology</li>
+            <li>Dental Care</li>
+            <li>Neurology</li>
+            <li>Pediatrics</li>
+            <li>Ophthalmology</li>
+            <li>Orthopedics</li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h3
+            class="font-bold text-medical-primary mb-2 text-center md:text-left"
+          >
+            Contact Info
+          </h3>
+          <ul class="flex flex-col gap-1">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>123 Main Street, Cityville, Country</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <p>+1 (555) 123-4567</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <p>contact@hospital.com</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright border-t border-gray-700 mt-5 pt-5">
+        <p class="text-center text-gray-500 text-sm">
+          &copy; Developed by
+          <span class="text-white cursor-pointer">Ahmed Fouad</span>. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Go Top -->
+    <button
+      id="go-top"
+      class="fixed bottom-5 right-5 text-2xl w-12.5 h-12.5 rounded-full text-white bg-medical-primary duration-300 opacity-0"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="js/main.js"></script>
+  </body>
+</html>
