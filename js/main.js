@@ -51,22 +51,22 @@ const deptCardsData = [
 ];
 const docCardsData = [
   {
-    image: "../assets/img/doctor1.jpg",
+    image: "./assets/img/doctor1.jpg",
     name: "Dr. James Wilson",
     specialty: "Chief Cardiologist",
   },
   {
-    image: "../assets/img/doctor2.jpg",
+    image: "./assets/img/doctor2.jpg",
     name: "Dr. Sarah Johnson",
     specialty: "Chief Cardiologist",
   },
   {
-    image: "../assets/img/doctor3.jpg",
+    image: "./assets/img/doctor3.jpg",
     name: "Dr. Michael Chen",
     specialty: "Dental Surgeon",
   },
   {
-    image: "../assets/img/doctor4.jpg",
+    image: "./assets/img/doctor4.jpg",
     name: "Dr. Emily Davis",
     specialty: "Neurology Specialist",
   },
