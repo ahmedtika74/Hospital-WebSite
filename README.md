@@ -35,10 +35,10 @@ Hospital-WebSite/
 2. Open index.html in your web browser
 
 ## 🙌 Key Features
-✔ Clean and responsive UI 
-✔ Converted from design to working code 
-✔ Mobile-friendly layout 
-✔ Organized project structure for development 
+- Clean and responsive UI 
+- Converted from design to working code 
+- Mobile-friendly layout 
+- Organized project structure for development 
 
 ## 📌 Notes
 This project showcases core front‑end development skills including layout, responsiveness, and working with Tailwind CSS.
