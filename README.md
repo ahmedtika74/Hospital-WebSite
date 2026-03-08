@@ -3,7 +3,7 @@
 A responsive hospital website built by converting a **design into code** using HTML, CSS, Tailwind CSS, and vanilla JavaScript.
 
 ## 🌐 Live Demo
-🔗 [https://ahmedtika74.github.io/Hospital-WebSite/]
+🌐 Live Demo: [Click here to view](https://ahmedtika74.github.io/Hospital-WebSite/)
 
 ## 📌 Project Overview
 This project was developed as part of frontend training. It demonstrates the ability to transform a UI design into a **fully responsive website** using modern web technologies. The layout adapts to different screen sizes including mobile, tablet, and desktop.
@@ -15,15 +15,17 @@ This project was developed as part of frontend training. It demonstrates the abi
 - **Responsive Design** – Mobile-first approach  
 
 ## 📁 Project Structure
-Hospital‑WebSite/
+```
+Hospital-WebSite/
 ├── index.html
 ├── css/
-│ └── style.css
+│   └── style.css
 ├── js/
-│ └── script.js
+│   └── script.js
 ├── assets/
-│ └── img/
+│   └── img/
 └── README.md
+```
 
 ## 📌 How to Run Locally
 1. Clone the repository  
@@ -33,10 +35,10 @@ Hospital‑WebSite/
 2. Open index.html in your web browser
 
 ## 🙌 Key Features
-✔ Clean and responsive UI
-✔ Converted from design to working code
-✔ Mobile-friendly layout
-✔ Organized project structure for development
+✔ Clean and responsive UI 
+✔ Converted from design to working code 
+✔ Mobile-friendly layout 
+✔ Organized project structure for development 
 
 ## 📌 Notes
 This project showcases core front‑end development skills including layout, responsiveness, and working with Tailwind CSS.
